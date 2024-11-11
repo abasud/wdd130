@@ -6,8 +6,8 @@
     background-color: #224477;
     color: white;
   }
-  
-  .callout img {
+
+.callout img {
     float: right;
     margin: 0 0 1rem 1rem; 
     border: 4px double black;
@@ -16,11 +16,11 @@
     height: auto;
   }
   
-  blockquote {
+blockquote {
     margin: 0;
   }
   
-  cite {
+cite {
     display: block; 
     border-top: 1px dotted; 
     padding-top: 2px; 
