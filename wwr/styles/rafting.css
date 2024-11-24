@@ -2,18 +2,17 @@
     --primary-color: #093A3E;
     --secondary-color: #3AAFB9;
     --accent1-color: #64E9EE;
-    --accent2-color: #EDBF85;
-    --heading-font: "Montserrat", sans-serif;
-    --text-font: "Roboto", sans-serif;    
+    --accent2-color: #EDBF85;  
 }
 
+
 h1, h2 {
-    font-family: var(--heading-font);
+    font-family: "Montserrat", sans-serif;
     color: var(--primary-color);
 }
 
 p {
-    font-family: var(--text-font);
+    font-family: "Roboto", sans-serif;
     color: var(--primary-color);
 }
 
@@ -29,10 +28,7 @@ p {
     display: block;
     width: 100%; 
     height: auto;
-}
-
-.hero article img {
-    float: right; 
+    position: relative;
 }
 
 .hero h1 {
@@ -41,4 +37,9 @@ p {
 
 .hero article {
     position: absolute; 
+}
+
+.hero article img {
+    float: right;
+    margin: 20px; 
 }
