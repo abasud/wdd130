@@ -5,6 +5,7 @@
     --accent2-color: #EDBF85;  
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400&display=swap');
 
 h1, h2 {
     font-family: "Montserrat", sans-serif;
@@ -20,7 +21,7 @@ p {
     text-decoration: none;
 }
 
-.hero {
+div { 
     position: relative;
 }
 
@@ -28,18 +29,30 @@ p {
     display: block;
     width: 100%; 
     height: auto;
-    position: relative;
 }
 
 .hero h1 {
-    position: absolute; 
+    position: absolute;
 }
 
 .hero article {
-    position: absolute; 
+    position: absolute;
 }
 
 .hero article img {
+    width: 300px;
+    height: auto;
     float: right;
-    margin: 20px; 
 }
+
+.hero section img {
+    width: 500px;
+    height: auto;
+}
+
+.sociallinks a img {
+    width: 50px;
+    height: auto;
+}
+
+
