@@ -22,7 +22,7 @@ p {
     text-decoration: none;
 }
 
-div { 
+.hero { 
     position: relative;
 }
 
@@ -54,6 +54,7 @@ div {
 .sociallinks a img {
     width: 50px;
     height: auto;
+    text-decoration: none;
 }
 
 
