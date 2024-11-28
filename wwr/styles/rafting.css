@@ -7,6 +7,87 @@
     --accent2-color: #EDBF85;  
 }
 
+header {
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 2fr;
+	align-items: center;
+	border-bottom: 1px solid var(--primary-color);
+	max-width: 1000px;
+}
+
+header nav {
+    display: flex;
+    grid-column: 3/4;
+    justify-content: space-around;
+    padding: 5px;
+    border: 3px solid var(--primary-color);
+}
+
+.hero {
+    display: grid;
+    grid-template: 1.5fr 1fr 1fr / 5% 90% 5%;
+    margin: 1rem auto;
+    max-width: 1000px;
+}
+
+.hero h2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero .hero-image h1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero .hero-image article img {
+    width: 100px;
+}
+
+.hero .hero-image article {
+    grid-area: 1/2/2/3;
+}
+
+.hero .hero-image {
+    grid-area: 1/2/2/3;
+}
+
+.hero .hero-image img {
+    grid-area: 1/2/2/3;
+    width: 200px;
+}
+
+.hero .section-1 {
+    grid-area: 2/2/3/3;
+}
+
+.hero .section-1 p {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero .section-1 img {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+.hero .section-2 {
+    grid-area: 3/2/4/3;
+}
+
+.hero .section-2 figure img {
+    max-width: 150px;
+}
+
+.hero .section-2 figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 h1, h2 {
     font-family: "Montserrat", sans-serif;
@@ -18,43 +99,26 @@ p {
     color: var(--primary-color);
 }
 
-.sociallink a {
+.sociallinks a {
     text-decoration: none;
 }
 
-.hero { 
-    position: relative;
+footer {
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	max-width: 1000px;
+    border-top: 1px solid var(--primary-color);
 }
 
-.hero img {
-    display: block;
-    width: 100%; 
-    height: auto;
+footer nav {
+    display: flex;
+    grid-column: 3/4;
+    justify-content: center;
 }
 
-.hero h1 {
-    position: absolute;
+footer nav img {
+    width: 30px;
+    padding: 10px;
 }
-
-.hero article {
-    position: absolute;
-}
-
-.hero article img {
-    width: 300px;
-    height: auto;
-    float: right;
-}
-
-.hero section img {
-    width: 500px;
-    height: auto;
-}
-
-.sociallinks a img {
-    width: 50px;
-    height: auto;
-    text-decoration: none;
-}
-
-
