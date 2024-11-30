@@ -24,11 +24,25 @@ header nav {
     border: 3px solid var(--primary-color);
 }
 
+header nav a {
+    color: #093A3E;
+}
+
 .hero {
     display: grid;
-    grid-template: 1.5fr 1fr 1fr / 5% 90% 5%;
-    margin: 1rem auto;
+    grid-template: 2fr 1fr 0.5fr / 5% 90% 5%;
+    margin: 2rem auto;
     max-width: 1000px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--accent1-color);
+}
+
+.hero h1 {
+    grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    color: var(--primary-color);
 }
 
 .hero h2 {
@@ -37,42 +51,65 @@ header nav {
     align-items: flex-start;
 }
 
-.hero .hero-image h1 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.hero .hero-image article img {
-    width: 100px;
-}
-
-.hero .hero-image article {
-    grid-area: 1/2/2/3;
-}
-
 .hero .hero-image {
     grid-area: 1/2/2/3;
+    margin-top: 100px;
 }
 
 .hero .hero-image img {
+    width: 100%;
+    border: 5px var(--primary-color);
+}
+
+.hero article {
     grid-area: 1/2/2/3;
-    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    margin: 350px 50px 300px 50px;
+    padding: 20px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--accent2-color);
+}
+
+#article-p {
+    order: 1;
+}
+
+#article-img {
+    order: 2
+}
+
+.hero article img {
+    width: 150px;
 }
 
 .hero .section-1 {
     grid-area: 2/2/3/3;
+    border: 3px solid var(--primary-color);
 }
 
-.hero .section-1 p {
+.hero .section-1 .section-1-content {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
 }
 
-.hero .section-1 img {
-    display: flex;
-    justify-content: flex-end;
-    float: right;
+#history-p1 {
+    order: 1;
+}
+
+#history-img {
+    order: 2;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+}
+
+#history-p2 {
+    order: 3;
 }
 
 .hero .section-2 {
@@ -80,13 +117,15 @@ header nav {
 }
 
 .hero .section-2 figure img {
-    max-width: 150px;
+    max-width: 100px;
 }
 
-.hero .section-2 figure {
+.hero .section-2 .figure {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 1rem auto;
+    max-width: 1000px;
 }
 
 h1, h2 {
