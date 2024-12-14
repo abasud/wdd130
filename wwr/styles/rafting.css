@@ -26,7 +26,7 @@ header nav a {
     color: #093A3E;
 }
 
-.hero {
+.about-page .hero {
     display: grid;
     grid-template: 2fr 1fr 0.5fr / 5% 90% 5%;
     margin: 2rem auto;
@@ -114,7 +114,7 @@ header nav a {
     grid-area: 3/2/4/3;
 }
 
-.hero .section-2 figure img {
+.about-page .hero .section-2 figure img {
     max-width: 100px;
 }
 
@@ -158,4 +158,423 @@ footer nav {
 footer nav img {
     width: 30px;
     padding: 10px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.contact-page .hero {
+    display: grid;
+    grid-template: 1fr 300px 1.2fr / 5% 90% 5%;
+    margin: 0.5rem auto;
+    max-width: 1000px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--accent1-color);
+}
+
+.contact-page .hero h1 {
+    grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    color: var(--primary-color);
+}
+
+.contact-page .hero h2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-page .contact {
+    grid-area: 1/2/2/3;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    background-color: var(--accent2-color);
+}
+
+.contact-page .inner-grid {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 2fr;
+    gap: 5px;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.contact-page .inner-cell {
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact-page .address {
+    grid-area: 1/1/2/2;
+}
+
+.contact-page .phone {
+    grid-area: 2/1/3/2;
+}
+
+.contact-page .email {
+    grid-area: 3/1/4/2;
+}
+
+.contact-page .map {
+    grid-area: 1/2/4/3;
+}
+
+.contact-page .section-2 {
+    grid-area: 2/2/3/3;
+}
+
+.contact-page .figure {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-page .figure img {
+    max-width: 200px;
+    justify-content: space-around;
+}
+
+.contact-page .form {
+    grid-area: 3/2/4/3;
+}
+
+.contact-page form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    background-color: lightgrey;
+    display: grid;
+}
+
+.contact-page fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+.contact-page legend {
+    padding: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.contact-page label, input, button, select, textarea {
+    font-family: Lora, Roboto, sans-serif;
+}
+
+.contact-page label {
+    text-align: left;
+    padding-left: 0;
+}
+
+.contact-page input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.contact-page input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+.contact-page #checkbox label {
+    margin-left: 20px;
+}
+
+.contact-page #textarea textarea {
+    width: 96%;
+}
+
+.contact-page button {
+    margin: 1rem;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem; 
+    border: 2px solid var(--primary-color);
+}
+
+.contact-page button:hover {
+    background-color: var(--secondary-color);
+}
+
+.contact-page .form-item {
+    display: grid;
+    align-items: center;
+}
+
+.contact-page .column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.contact-page .column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.contact-page h1, h2 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
+}
+
+.contact-page p {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-color);
+}
+
+.contact-page .sociallinks a {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.index-page .hero {
+    display: grid;
+    grid-template: 1fr 1fr 300px / 5% 90% 5%;
+    margin: 0.5rem auto;
+    max-width: 1000px;
+    border: 1px solid var(--primary-color);
+}
+
+.index-page h1 {
+    grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    color: var(--primary-color);
+    margin-top: 15px;
+    font-family: "Covered By Your Grace", sans-serif;
+    font-size: 50px;
+    
+}
+
+.index-page .hero-image {
+    grid-area: 1/1/4/4;
+}
+
+.index-page .hero-image img {
+    width: 100%;
+    border: 5px var(--primary-color);
+    opacity: 0.3;
+}
+
+.index-page .figure {
+    grid-area: 2/2/3/3;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.index-page .figure img {
+    max-width: 200px;
+    justify-content: space-around;
+}
+
+.index-page .img-figcaption {
+    padding: 5px;
+    border: 3px solid var(--primary-color);
+    background-color: var(--accent1-color)
+}
+
+.index-page .form {
+    grid-area: 3/2/4/3;
+    z-index: 1;
+}
+
+.index-page form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    background-color: var(--accent2-color);
+    display: grid;
+}
+
+.index-page fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+.index-page legend {
+    padding: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.index-page label, button {
+    font-family: sans-serif;
+}
+
+.index-page label {
+    text-align: left;
+    padding-left: 0;
+}
+
+.index-page button {
+    grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin: 150px 360px 460px 360px;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: .5rem;
+    padding: 5px;
+    font-size: 1.2rem; 
+    border: 2px solid var(--primary-color);
+}
+
+.index-page button:hover {
+    background-color: var(--accent2-color);
+}
+
+.index-page .form-item {
+    display: grid;
+    align-items: center;
+}
+
+.index-page .column {
+    grid-template-columns: 1fr 2fr;
+}
+
+.cta {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.trips-page .hero {
+    display: grid;
+    grid-template: 1fr 700px 300px / 5% 90% 5%;
+    margin: 0.5rem auto;
+    max-width: 1000px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--accent1-color);
+}
+
+.trips-page h1 {
+    grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    color: var(--primary-color);
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    
+}
+
+.trips-page .hero button {
+    grid-area: 3/2/4/3;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin: 0px 300px 250px 300px;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: .5rem;
+    padding: 10px;
+    font-size: 1.2rem; 
+    border: 2px solid var(--primary-color);
+}
+
+.trips-page button:hover {
+    background-color: var(--secondary-color);
+}
+
+.trips-page .cta {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.trips-page .outer-cell {
+    grid-area: 1/2/2/3;
+    margin-top: 100px;
+   
+}
+
+.trips-page .inner-grid {
+    display: grid;
+    justify-items: center;
+    grid-template: repeat(3, 100px) 1fr 1fr / repeat(3, 1fr);
+    border: 3px solid black;
+    max-width: 1000px;
+    gap: 20px;
+    padding: 20px;
+}
+
+#trip-1-img {
+    grid-area: 1/1/2/2;
+}
+
+#trip-2-img {
+    grid-area: 2/2/3/3;
+}
+
+#trip-3-img {
+    grid-area: 3/3/4/4;
+}
+
+.inner-grid img {
+    max-width: 200px;
+}
+
+.trips-page .trip-1 {
+    grid-area: 2/1/4/2;
+}
+
+.trips-page .trip-2 {
+    grid-area: 3/2/5/3;
+}
+
+.trips-page .trip-3 {
+    grid-area: 4/3/6/4;
+}
+
+.trips-page .hero .table {
+    grid-area: 2/2/3/3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: var(--accent2-color);
+}
+th, td {
+    padding: 12px;
+    border: 2px solid black;
+}
+th {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+tr:hover {
+    background-color: var(--accent1-color);
+}
+
+.table h1 {
+    margin-top: 100px;
 }
